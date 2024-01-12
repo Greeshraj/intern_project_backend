@@ -43,6 +43,6 @@ app.use((error, req, res, next) => {
     return res.status(error.statusCode).json({ message: error.message })
 })
 app.listen(port, (err) => {
-    console.log(`Server is running on port: ${port}`);
+    console.log(`Server is running on the port: ${port}`);
     if (err) console.log(err)
 })
